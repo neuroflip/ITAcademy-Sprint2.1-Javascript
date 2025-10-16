@@ -24,7 +24,7 @@ npm install
 npm run test
 ```
 
-![alt basic screenshot from the project](https://github.com/neuroflip/ITAcademy-Sprint2.1-Javascript/blob/exercise/ArrowFunctions/etc/screenshot.png)
+![alt basic screenshot from the project](https://github.com/neuroflip/ITAcademy-Sprint2.1-Javascript/blob/exercise/ArrowFunctions/etc/tests.png)
 
 # Why this exercises include tests?
 
