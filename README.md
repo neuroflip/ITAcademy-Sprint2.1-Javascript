@@ -4,6 +4,7 @@ This repository implements the Sprint 2.1
 - Exercici 1.1: Arrow functions.
 - Exercise 1.2: Ternary operator.
 - Exercise 1.3: Callbacks.
+- Exercise 1.4: Rest & Spread operator.
 
 The project is a vite + vitest project with only javascript code that implements the exercises. The structure of the exercises is the next one:
 
