@@ -1,0 +1,22 @@
+{
+  "name": "itacademy-sprint2.1-javascript",
+  "version": "1.0.0",
+  "description": "This implements the Sprint 2.1 - Javascript for the ITAcademy",
+  "scripts": {
+    "test": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neuroflip/ITAcademy-Sprint2.1-Javascript.git"
+  },
+  "author": "Jose A. Anguita",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neuroflip/ITAcademy-Sprint2.1-Javascript/issues"
+  },
+  "homepage": "https://github.com/neuroflip/ITAcademy-Sprint2.1-Javascript#readme",
+  "devDependencies": {
+    "vite": "^7.1.10",
+    "vitest": "^3.2.4"
+  }
+}
