@@ -18,10 +18,9 @@ describe ('1.2 Ternary Operator', () => {
 
   describe('Exercise 3: positiuNegatiuOZero and trobarMaxim', () => {
     test('positiuNegatiuOZero function', () => {
-      expect(comparador(-1, -3)).toBe('num1 es mes gran');
-      expect(comparador(2, 4)).toBe('num2 es mes gran');
-      expect(comparador(13, 4)).toBe('num1 es mes gran');
-      expect(comparador(0, 0)).toBe('num2 es mes gran');
+      expect(positiuNegatiuOZero(-1)).toBe('negatiu');
+      expect(positiuNegatiuOZero(2)).toBe('positiu');
+      expect(positiuNegatiuOZero(0)).toBe('zero');
     });
 
     test('trobarMaxim function', () => {
