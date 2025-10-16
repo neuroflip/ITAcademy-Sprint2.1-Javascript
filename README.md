@@ -5,11 +5,11 @@ This repository implements the Sprint 2.1
 
 The project is a vite project with only javascript code that implements the exercises. The structure of the exercises is the next one:
 
- - each exercise has a directory that includes the solution 
- - inside each directory there is:
+ 1. each exercise has a directory that includes the solution 
+ 2. inside each directory there is:
   - one *.js that implements a module exporting the functions from the exercise
   - one *.test.js that imports all the implemented functions in the module and tests them
- - /etc directory includes the screenshot for the README file
+ 3. /etc directory includes the screenshot for the README file
 
 
 ## Instructions to run the project
