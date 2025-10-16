@@ -7,8 +7,8 @@ The project is a vite project with only javascript code that implements the exer
 
  - each exercise has a directory that includes the solution 
  - inside each directory there is:
-  - one *.js that implements the exercise
-  - one *.test.js that tests the implementation 
+  - one *.js that implements a module exporting the functions from the exercise
+  - one *.test.js that imports all the implemented functions in the module and tests them
  - /etc directory includes the screenshot for the README file
 
 
