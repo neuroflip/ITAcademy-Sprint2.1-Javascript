@@ -2,6 +2,7 @@
 
 This repository implements the Sprint 2.1 
 - Exercici 1.1: Arrow functions.
+- Exercise 1.2: Ternary operator
 
 The project is a vite project with only javascript code that implements the exercises. The structure of the exercises is the next one:
 
@@ -24,8 +25,10 @@ npm install
 npm run test
 ```
 
-![alt basic screenshot from the project](https://github.com/neuroflip/ITAcademy-Sprint2.1-Javascript/blob/exercise/ArrowFunctions/etc/tests.png)
+![alt basic screenshot from the project](https://github.com/neuroflip/ITAcademy-Sprint2.1-Javascript/blob/main/etc/tests.png)
 
 # Why this exercises include tests?
 
 The reason is because this is the best way to check the functions or code to implement. This way we can ensure that the implementation works correctly based on the statement of the exercise.
+
+** Note that the repository includes the 
