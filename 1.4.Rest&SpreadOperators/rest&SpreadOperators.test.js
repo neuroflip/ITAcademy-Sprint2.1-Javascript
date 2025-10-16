@@ -1,13 +1,7 @@
-import { expect, test, vi, describe, afterAll } from 'vitest';
+import { expect, test, describe, vi } from 'vitest';
 import { exercise1SpreadArrays, suma, spreadInObjects, restInDestructing, spreadInFunctions, objectFusion } from './rest&SpreadOperators';
 
 describe ('1.4 Rest & Spread operators', () => {
-  const consoleLogMock = vi.spyOn(console, 'log').mockImplementation(() => undefined);
-
-  afterAll(() => {
-    consoleLogMock.mockReset();
-  });
-
   test('Exercise 1: spread operator in arrays', () => {
     const result = exercise1SpreadArrays([0, 1, 2, 3, 4], [5, 6, 7, 8, 9]);
 
@@ -44,11 +38,14 @@ describe ('1.4 Rest & Spread operators', () => {
   })
 
   test('Exercise 5: Spread in functions', () => {
+    const consoleLogMock = vi.spyOn(console, 'log').mockImplementation(() => undefined);
     const params = [0,1,2];
     
     spreadInFunctions(...params);
 
     expect(consoleLogMock).toHaveBeenCalledWith('0 1 2');
+
+    consoleLogMock.mockReset();
   })
 
   test('Exercise 6: opbject fusion with spread', () => {    
