@@ -7,6 +7,7 @@ This repository implements the Sprint 2.1
 - Exercise 1.4: Rest & Spread operator.
 - Exercise 1.5: Array transformations.
 - Exercise 1.6: Array Loops.
+- Exercise 1.7: Promises & Async/Await.
 
 The project is a vite + vitest project with only javascript code that implements the exercises. The structure of the exercises is the next one:
 
