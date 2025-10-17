@@ -40,4 +40,6 @@ npm run test
 
 The reason is because this is the best way to check the functions or code to implement. This way we can ensure that the implementation works correctly based on the statement of the exercise.
 
-***Note that the repository includes the directory .github with the file main.yml***. It is needed to run all the tests in every Pull request created to merge into main. As every exercise was merged using a Pull request, this ensures that all the merges into main doesn't break the previous code.
+***Note that the repository includes the directory .github with the file main.yml***. It is needed to run all the tests in every Pull request created to merge into main. As every exercise was merged using a Pull request, this ensures that all the merges into main doesn't break the previous code:
+
+![alt github action after pass tests](https://github.com/neuroflip/ITAcademy-Sprint2.1-Javascript/blob/main/etc/githubaction.png)
