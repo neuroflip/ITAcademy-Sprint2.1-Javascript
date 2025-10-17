@@ -1,17 +1,22 @@
-import { expect, test, vi, describe, afterAll, beforeAll } from 'vitest';
+import { expect, test, vi, describe, afterEach, afterAll, beforeEach } from 'vitest';
 import { add, randomNumber, Person, printNumbers, printMessage } from './arrowFuntions';
 
 describe ('1.1 Arrow functions', () => {
   const consoleLogMock = vi.spyOn(console, 'log').mockImplementation(() => undefined);
 
-  beforeAll(() => {
+  beforeEach(() => {
     vi.useFakeTimers();
   })
 
-  afterAll(() => {
-    consoleLogMock.mockReset();
+  afterEach(() => {
+    consoleLogMock.mockClear();
      vi.useRealTimers();
   });
+  
+  afterAll(() => {
+    consoleLogMock.mockRestore();
+  })
+
 
   test('Exercise 1: add arrow function', () => {
     expect(add(0,0)).toBe(0);

@@ -1,15 +1,18 @@
-import { expect, test, vi, describe, afterAll, beforeAll } from 'vitest';
+import { expect, test, vi, describe, afterAll, afterEach, beforeEach } from 'vitest';
 import { processar, calculadora, esperarISaludar, processarElements, processarCadena } from './callbacks';
 
 describe ('1.3 Callbacks', () => {
   const consoleLogMock = vi.spyOn(console, 'log').mockImplementation(() => undefined);
 
-  beforeAll(() => {
+  beforeEach(() => {
     vi.useFakeTimers();
   })
 
+  afterEach(() => {
+    consoleLogMock.mockClear();
+  });
+
   afterAll(() => {
-    consoleLogMock.mockReset();
      vi.useRealTimers();
   });
 
@@ -42,6 +45,7 @@ describe ('1.3 Callbacks', () => {
 
     processarElements(numbers, console.log);
 
+    expect(consoleLogMock).toHaveBeenCalledTimes(10);
     for (let i=0; i<numbers.length; i++ ) {
       expect(consoleLogMock).toHaveBeenCalledWith(numbers[i]);
     }
