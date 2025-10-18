@@ -13,7 +13,7 @@ const holaPromise = (param) => {
   })
 }
 const asyncFunction = async () => {
-  const result = await createDeferTimeout('Hola, món', 2000);
+  const result = await createPromiseSetTimeout();
 
   return result;
 }
@@ -21,7 +21,7 @@ const asyncFunction = async () => {
 const asyncFunctionTryCatch = async () => {
   let result;
   try {
-    result = await createDeferTimeout('Hola, món', 2000);    
+    result = await createPromiseSetTimeout();
   } catch(exception) {
     result = exception;
   }
@@ -41,4 +41,5 @@ const promiseAllFunction = () => {
 }
 
 
-export { createPromiseSetTimeout, holaPromise, asyncFunction, asyncFunctionTryCatch, promiseAllFunction }
+export { createPromiseSetTimeout, holaPromise, asyncFunction, asyncFunctionTryCatch, 
+  promiseAllFunction };

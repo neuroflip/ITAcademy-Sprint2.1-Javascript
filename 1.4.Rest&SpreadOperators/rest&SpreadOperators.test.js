@@ -1,9 +1,10 @@
 import { expect, test, describe, vi } from 'vitest';
-import { exercise1SpreadArrays, suma, spreadInObjects, restInDestructing, spreadInFunctions, objectFusion } from './rest&SpreadOperators';
+import { combineArraysUsingSpreadOperator, suma, spreadInObjects, restInDestructing, 
+  spreadInFunctions, objectFusion } from './rest&SpreadOperators';
 
 describe ('1.4 Rest & Spread operators', () => {
   test('Exercise 1: spread operator in arrays', () => {
-    const result = exercise1SpreadArrays([0, 1, 2, 3, 4], [5, 6, 7, 8, 9]);
+    const result = combineArraysUsingSpreadOperator([0, 1, 2, 3, 4], [5, 6, 7, 8, 9]);
 
     expect(result).toStrictEqual([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]);
   });
@@ -57,8 +58,7 @@ describe ('1.4 Rest & Spread operators', () => {
       d: 'd',
       e: 'e',
       f: 'f',
-    },
-    expectedResult = {
+    }, expectedResult = {
       a: 'a',
       b: 'b',
       c: 'c',

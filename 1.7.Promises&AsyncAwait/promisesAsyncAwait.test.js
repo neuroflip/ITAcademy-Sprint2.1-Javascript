@@ -1,5 +1,6 @@
 import { expect, test, describe, vi, afterEach, afterAll , beforeEach} from 'vitest';
-import { createPromiseSetTimeout, holaPromise, asyncFunction, asyncFunctionTryCatch, promiseAllFunction } from './promisesAsyncAwait';
+import { createPromiseSetTimeout, holaPromise, asyncFunction, asyncFunctionTryCatch, 
+  promiseAllFunction } from './promisesAsyncAwait';
 
 describe ('1.7 Promises and async/Await', () => {
   const consoleLogMock = vi.spyOn(console, 'log').mockImplementation(() => undefined);

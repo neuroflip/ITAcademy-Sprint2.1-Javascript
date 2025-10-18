@@ -22,4 +22,5 @@ const forOfPrintValueAndIndexFromArray = (array) => {
   }
 }
 
-export { forEachPrintNames, forOfPrintNames, filterEvenNumbersFromArray, forInPrintObject, forOfBreakUntilFive, forOfPrintValueAndIndexFromArray }
+export { forEachPrintNames, forOfPrintNames, filterEvenNumbersFromArray, forInPrintObject, 
+  forOfBreakUntilFive, forOfPrintValueAndIndexFromArray };

@@ -1,4 +1,4 @@
-import { expect, test, vi, describe, afterAll, beforeAll } from 'vitest';
+import { expect, test, vi, describe } from 'vitest';
 import { potConduir, comparador, positiuNegatiuOZero, trobarMaxim, parOImpar } from './ternaryOperator';
 
 describe ('1.2 Ternary Operator', () => {

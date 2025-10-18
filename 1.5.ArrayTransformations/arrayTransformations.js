@@ -6,4 +6,6 @@ const oneLineOperation = (array) => array.filter((num) => num >= 10).map((num) =
 const everyNumberFromArrayGreaterThanTen = (array) => array.every((num) => num > 10);
 const someNumberFromArrayGreaterThanTen = (array) => array.some((num) => num > 10);
 
-export { squaredArray, onlyEventNumbersFromArray, onlyNumbersGreaterThanTen, sumArrayWithReduce, oneLineOperation, everyNumberFromArrayGreaterThanTen, someNumberFromArrayGreaterThanTen };
+export { squaredArray, onlyEventNumbersFromArray, onlyNumbersGreaterThanTen, 
+  sumArrayWithReduce, oneLineOperation, everyNumberFromArrayGreaterThanTen, 
+  someNumberFromArrayGreaterThanTen };
