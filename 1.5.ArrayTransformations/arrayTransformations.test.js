@@ -1,5 +1,7 @@
 import { expect, test, describe } from 'vitest';
-import { squaredArray, onlyEventNumbersFromArray, onlyNumbersGreaterThanTen, sumArrayWithReduce, oneLineOperation, someNumberFromArrayGreaterThanTen, everyNumberFromArrayGreaterThanTen } from './arrayTransformations';
+import { squaredArray, onlyEventNumbersFromArray, onlyNumbersGreaterThanTen, 
+  sumArrayWithReduce, oneLineOperation, someNumberFromArrayGreaterThanTen, 
+  everyNumberFromArrayGreaterThanTen } from './arrayTransformations';
 
 describe ('1.5 Array transformations', () => {
   test('Exercise 1: squared array', () => {
