@@ -1,8 +1,11 @@
+const createDeferTimeout = (resolveMessage, time) => {
+  return new Promise((resolve) => {
+    setTimeout(() => resolve(resolveMessage), time);
+  })
+}
 
 const createPromiseSetTimeout = () => {
-  return new Promise((resolve) => {
-    setTimeout(() => resolve('Hola, món'), 2000);
-  })
+  return createDeferTimeout('Hola, món', 2000);
 }
 const holaPromise = (param) => {
   return new Promise((resolve, reject) => {
@@ -10,7 +13,7 @@ const holaPromise = (param) => {
   })
 }
 const asyncFunction = async () => {
-  const result = await createPromiseSetTimeout();
+  const result = await createDeferTimeout('Hola, món', 2000);
 
   return result;
 }
@@ -18,7 +21,7 @@ const asyncFunction = async () => {
 const asyncFunctionTryCatch = async () => {
   let result;
   try {
-    result = await createPromiseSetTimeout();    
+    result = await createDeferTimeout('Hola, món', 2000);    
   } catch(exception) {
     result = exception;
   }
@@ -27,13 +30,8 @@ const asyncFunctionTryCatch = async () => {
 }
 
 const promiseAllFunction = () => {
-  const promise1 = new Promise((resolve) => {
-    setTimeout(() => resolve('promise 1 resolved!'), 3000);
-  })
-
-  const promise2 = new Promise((resolve) => {
-    setTimeout(() => resolve('promise 2 resolved!'), 2000);
-  })
+  const promise1 = createDeferTimeout('promise 1 resolved!', 3000);
+  const promise2 = createDeferTimeout('promise 2 resolved!', 2000);
 
   return Promise.all([promise1, promise2]).then((results) => {
     for (const result of results) {
